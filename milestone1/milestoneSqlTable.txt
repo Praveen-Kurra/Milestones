@@ -1,0 +1,17 @@
+create database milestone;
+
+use milestone;
+
+create table book(
+ bookId int primary key,
+ 
+ bookName varchar(15),
+ 
+ bookPrice float,
+ 
+ bookPublisher varchar(20),
+ 
+ yearOfPublication int
+
+
+)

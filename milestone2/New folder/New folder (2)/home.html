@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Asset Allocation System</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form method="get">
+            <div class="details">
+                <div class="forh1"><h1><b><u>Asset Allocation System</u></b></h1></div>
+                <div class="fromid">
+                    <label for="MID">MID:</label>
+                    <input id="MID" name="MID">
+                </div>
+                <div class="devicetype">
+                    <label for="DeviceType">Device Type:</label>
+                    <select name="DeviceType" id="DeviceType" class="selectbox">
+                        <option value="" disabled selected hidden>- Select -</option>
+                        <option>Desktop</option>
+                        <option>Laptop</option>
+                        <option>Mobile</option>
+                    </select>
+                </div>
+                </br></br></br>
+                <div class="textbox">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="Name">
+                </div>
+                <div class="radiobox">
+                    <label>OS:</label>
+                    <label for="32bit" class="radio">
+                    <input type="radio" name="OS" id="32bit" value="32bit">32bit</label>
+                    <label for="64bit" class="radio">
+                    <input type="radio" name="OS" id="64bit" value="64bit">64bit</label>
+                </div>
+                </br></br></br>
+                <div class="button">
+                    <input type="button" name="submit" id="submit" value="Add Record" onclick="validate()">
+                    
+                </div>
+            </div>
+        </form>
+
+        
+        <br />
+        <div class="submitcount">
+            <input type="submit" id="count" value="Count" onclick="getCount()">
+            <span id="item"></span>
+        </div>
+    </div>
+ <div id="table">
+    <label class="tablelabel"><b>Asset Allocation Details</b></label>
+    <table id="display">
+        <thead>
+            <tr class="row">
+                <th>MID</th>
+                <th>Name</th>
+                <th>DeviceType</th>
+                <th>OS</th>
+            </tr>
+        </thead>
+    </table>
+ </div>
+</body>
+</html>
